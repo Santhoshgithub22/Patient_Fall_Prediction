@@ -38,7 +38,7 @@ class CustomData:
                  acc_max:float,
                  gyro_max:float,
                  acc_kurtosis:float,
-                 label:str,
+                 #label:str,
                  lin_max:float,
                  acc_skewness:float,
                  gyro_skewness:float,
@@ -49,7 +49,7 @@ class CustomData:
         self.acc_max = acc_max
         self.gyro_max = gyro_max
         self.acc_kurtosis = acc_kurtosis
-        self.label = label
+        #self.label = label
         self.lin_max = lin_max
         self.acc_skewness = acc_skewness
         self.gyro_skewness = gyro_skewness

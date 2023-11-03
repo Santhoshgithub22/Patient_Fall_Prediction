@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset='utf-8'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../static/css/main.css'>
-</head>
+body{
 
-<body>
-    <h1>Welcome To Fall Detection Prediction Web Application</h1s>
-    <h2>Enter your values and get your prediction values</h2>
-</body>
+    background-image:rgb(0, 255, 221);
 
-<style>
-    body{
-        background-color: palegreen;
-    }
-</style>
+    background-attachment: fixed;
 
-</html>
+    background-repeat: no-repeat;
+
+    background-size: 100% 100%;
+
+    background-color:powderblue;
+
+    padding-right: 20em;
+    
+    padding-left: 11em;
+        
+    font-family: Courier New, “Lucida Console”;
+    
+    color: rgb(2, 52, 75);
+}
