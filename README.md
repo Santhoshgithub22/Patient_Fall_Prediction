@@ -54,7 +54,9 @@ Include data from both fall and non-fall scenarios to ensure a balanced dataset.
 Clean the data by handling missing values and outliers.
 Normalize or standardize the data to ensure all features have the same scale.
 
-**Feature engineering:** Extract relevant features from raw sensor data, such as mean, variance, skewness, and kurtosis.
+**Feature engineering:** 
+
+Extract relevant features from raw sensor data, such as mean, variance, skewness, and kurtosis.
 
 **Data Splitting:**
 
