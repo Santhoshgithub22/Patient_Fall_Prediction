@@ -69,7 +69,7 @@ Train the selected models on the training dataset using the preprocessed data.
 
 **Model Evaluation:**
 
-*Evaluate model performance using metrics like accuracy, precision, recall, F1-score, and area under the receiver operating characteristic (ROC-AUC) curve.
+**Evaluate model performance using metrics like accuracy, precision, recall, F1-score, and area under the receiver operating characteristic (ROC-AUC) curve.
 Use confusion matrices to analyze false positives and false negatives.
 Model Optimization:
 
