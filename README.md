@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Prerequisite](#prerequisite)
 - [Dataset](#dataset)
 - [Methodology](#methodology)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
@@ -15,7 +16,9 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## Getting Started
+### Introduction
+
+Patient Fall Prediction is a critical healthcare application that uses data science and machine learning to anticipate and prevent patient falls. By analyzing patient data, environmental factors, and sensor inputs, this technology provides early warnings to healthcare providers, ensuring patient safety, and better care. Its primary goal is to create a safer patient environment, improve healthcare quality, and optimize resource allocation within medical facilities. This innovative application enhances patient care and represents a significant advancement in healthcare technology.
 
 These instructions will help you set up the project on your local machine for development and testing purposes.
 
@@ -29,7 +32,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Data
 
-Explain how to access and preprocess the data used for training and prediction. [kaggle dataset link] ("https://www.kaggle.com/code/saadmansakib/human-fall-detection-using-random-forest-97-47")
+Explain how to access and preprocess the data used for training and prediction. [kaggle dataset link]("https://www.kaggle.com/code/saadmansakib/human-fall-detection-using-random-forest-97-47")
 
 ### Installation
 
