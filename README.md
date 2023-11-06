@@ -40,6 +40,7 @@ To install the required dependencies, use the following command:
 
 ```shell
 pip install -r requirements.txt
+```
 
 ### Methodology
 
