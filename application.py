@@ -2,7 +2,9 @@ from flask import Flask, render_template, jsonify, request
 from src.pipeline.prediction_pipeline import CustomData, PredictPipeline
 from src.logger import logging
 
-app = Flask(__name__)
+application = Flask(__name__)
+
+app = application
 
 #logging.info("First Route Has Started")
 @app.route("/")
