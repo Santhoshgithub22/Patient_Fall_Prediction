@@ -73,9 +73,17 @@ Train the selected models on the training dataset using the preprocessed data.
 Use confusion matrices to analyze false positives and false negatives.
 Model Optimization:
 
-Deployment:
+## Deployment:
 
 Deployed by using FLASK and deployed in the cloud by using AWS Beanstalk for healthcare system processing for fall detection.
 
 Update the model as new data becomes available to improve accuracy.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to this repository.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
