@@ -30,7 +30,7 @@ Before you begin, ensure you have met the following requirements:
 - Pip (Python package manager)
 - Virtual environment (recommended)
 
-### Data
+### Dataset
 
 Explain how to access and preprocess the data used for training and prediction. [kaggle dataset link]("https://www.kaggle.com/code/saadmansakib/human-fall-detection-using-random-forest-97-47")
 
@@ -40,3 +40,41 @@ To install the required dependencies, use the following command:
 
 ```shell
 pip install -r requirements.txt
+
+### Methodology
+
+**Data Collection:**
+
+Gather a diverse dataset that includes sensor data, such as accelerometer and gyroscope readings, from wearable devices.
+Include data from both fall and non-fall scenarios to ensure a balanced dataset.
+
+**Data Preprocessing:**
+
+Clean the data by handling missing values and outliers.
+Normalize or standardize the data to ensure all features have the same scale.
+
+**Feature engineering:** Extract relevant features from raw sensor data, such as mean, variance, skewness, and kurtosis.
+
+**Data Splitting:**
+
+Split the dataset into training and testing sets. A common split is 70-30 or 80-20 for training and testing, respectively.
+Model Selection:
+
+Used machine learning models for fall detection, such as Logistic Regression, Decision Trees, Random Forest Classifier, Support Vector Classifier, Naive Bayes, Gradient Boosting, Ada Boosting, & K-Nearst Neighbours.
+
+**Model Training:**
+
+Train the selected models on the training dataset using the preprocessed data.
+
+**Model Evaluation:**
+
+*Evaluate model performance using metrics like accuracy, precision, recall, F1-score, and area under the receiver operating characteristic (ROC-AUC) curve.
+Use confusion matrices to analyze false positives and false negatives.
+Model Optimization:
+
+Deployment:
+
+Deployed by using FLASK and deployed in the cloud by using AWS Beanstalk for healthcare system processing for fall detection.
+
+Update the model as new data becomes available to improve accuracy.
+
