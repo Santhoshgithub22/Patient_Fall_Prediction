@@ -1,15 +1,17 @@
-```
-#PATIENT FOOTFALL PREDICTION
-```
+# PATIENT FOOTFALL PREDICTION
 
 ![Patient Fall](https://media.istockphoto.com/id/1340235916/photo/female-asian-patient-fell-lying-on-the-floor-at-hospital-she-is-trying-to-raise-their-hand.jpg?s=612x612&w=0&k=20&c=8LqmResuX-iHN-wBBIfRw0AazDccxtLMiA7SVLw6g14=)
 
 ## Table of Contents
-- [Getting Started](#getting-started)
-- [Data](#data)
-- [Installation](#installation)
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Methodology](#methodology)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Feature Importance](#feature-importance)
+- [Modeling](#modeling)
+- [Results](#results)
+- [Conclusion](#conclusion)
 - [Usage](#usage)
-- [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -27,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Data
 
-Explain how to access and preprocess the data used for training and prediction. You may provide links to the dataset, describe data preprocessing steps, and provide sample data.
+Explain how to access and preprocess the data used for training and prediction. [kaggle dataset link] ("https://www.kaggle.com/code/saadmansakib/human-fall-detection-using-random-forest-97-47")
 
 ### Installation
 
