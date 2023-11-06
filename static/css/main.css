@@ -1,15 +1,12 @@
-
 body{
 
-    background-image:rgb(0, 255, 221);
+    background-image:url('/Images/Diamond.jpg');
 
     background-attachment: fixed;
 
     background-repeat: no-repeat;
 
     background-size: 100% 100%;
-
-    background-color:powderblue;
 
     padding-right: 20em;
     

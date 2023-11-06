@@ -1,59 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Fall Detection Prediction Web Application</title>
-    <style>
-        body {
-            background-color: palegreen;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        form {
-            background-color: #f0f0f0;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        .form-group {
-            margin: 10px;
-        }
-
-        label {
-            display: block;
-        }
-
-        input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        input[type="submit"] {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
+<html>
 <body>
-    <form action="{{http://127.0.0.1:5001}}" method="POST">
-        <h1>Welcome To Fall Detection Prediction Web Application</h1>
-        <h2>Enter your values and get your prediction values</h2>
+    <h1>WelCome To Patient Fall Prediction</h1>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
 
         <div class="form-group">
             <label for="acc_max">acc_max:</label>
@@ -91,7 +39,7 @@
         </div>
 
         <div class="form-group">
-            <label for="post_gyro_skewness">acc_max:</label>
+            <label for="post_gyro_skewness">post_gyro_skewness:</label>
             <input type="text" id="post_gyro_skewness" name="post_gyro_skewness" placeholder="Enter post_gyro_skewness value (float)">
         </div>
 
@@ -100,8 +48,10 @@
             <input type="text" id="post_lin_max" name="post_lin_max" placeholder="Enter post_lin_max value (float)">
         </div>
 
+<div style="clear:both;"></div>
+    <input type="submit" value="Submit">
+</form>
 
-        <input type="submit" value="Submit">
-    </form>
+<p>Prediction is : {{final_result}}</p>
 </body>
 </html>

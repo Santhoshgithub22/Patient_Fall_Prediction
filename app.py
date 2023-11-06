@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home_page():
     return render_template('index.html')
 
-@app.route("/predict", methods=['GET', 'POST'])
+@app.route('/predict', methods=['GET', 'POST'])
 def predict_datapoint():
     if request.method == 'GET':
         return render_template('form.html')
@@ -15,15 +15,15 @@ def predict_datapoint():
         data=CustomData(
             acc_max = float(request.form.get('acc_max')),
             gyro_max = float(request.form.get('gyro_max')),
-            acc_kurtosis= float(request.form.get('kurtosis')),
+            acc_kurtosis= float(request.form.get('acc_kurtosis')),
             gyro_kurtosis = float(request.form.get('gyro_kurtosis')),
             #label = request.form.get('label'),
             lin_max = float(request.form.get('lin_max')),
-            acc_skewness = float(request.form.get('skewness')),
+            acc_skewness = float(request.form.get('acc_skewness')),
             gyro_skewness = float(request.form.get('gyro_skewness')),
             post_gyro_max = float(request.form.get('post_gyro_max')),
-            post_lin_max = float(request.form('post_lin_max')),
-            fall = float(request.form('fall'))
+            post_lin_max = float(request.form.get('post_lin_max'))
+            #fall = float(request.form('fall'))
         )
 
         final_new_data = data.get_data_as_dataframe()
@@ -35,7 +35,7 @@ def predict_datapoint():
         else:
             results = "FALL"
 
-        return render_template('results.html', final_result = results)
+        return render_template('form.html', final_result = results)
 
 
 if __name__ == "__main__":
