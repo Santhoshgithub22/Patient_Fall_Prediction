@@ -15,14 +15,20 @@ class PredictPipeline:
     logging.info("Prediction Pipeline Has Started")
 
     def predict(self, features):
+        logging.info("Predict Function Has Started")
+
         try:
             preprocessor_path = os.path.join("artifacts", "preprocessor.pkl")
             model_path = os.path.join("artifacts", "model.pkl")
 
             preprocessor = load_object(preprocessor_path)
             model = load_object(model_path)
+            
+            logging.info("Succesfully model loaded")
 
             data_scaled = preprocessor.transform(features)
+            #data_scaled = data_scaled.reshape(1,-1)
+            logging.info(f"Data Scaled: {data_scaled}")
 
             pred = model.predict(data_scaled)
             logging.info("Prediction Pipeline Class Ended")
@@ -70,6 +76,9 @@ class CustomData:
                 'post_gyro_max':[self.post_gyro_max],
                 'post_lin_max':[self.post_lin_max],
             }
+            df = pd.DataFrame(custom_data_input_dict)
+            logging.info('Dataframe Gathered')
+            return df
 
         except Exception as e:
             logging.info("Exception Occured In Prediction Pipeline")

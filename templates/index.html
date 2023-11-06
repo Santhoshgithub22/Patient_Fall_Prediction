@@ -1,1 +1,102 @@
-<h1>Welcom TO The Home</h1>
+<h1>Welcome TO The Patient Fall Prediction</h1>
+<h3>Enter Your Values And Get Your Results</h3>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fall Detection</h1>
+        <form action="/predict" method="post">
+            <label for="acc_max">Accelerometer Max:</label>
+            <input type="text" name="acc_max" id="acc_max" required>
+
+            <label for="gyro_max">Gyroscope Max:</label>
+            <input type="text" name="gyro_max" id="gyro_max" required>
+
+            <label for="acc_kurtosis">Accelerometer Kurtosis:</label>
+            <input type="text" name="acc_kurtosis" id="acc_kurtosis" required>
+
+            <label for="gyro_kurtosis">Gyroscope Kurtosis:</label>
+            <input type="text" name="gyro_kurtosis" id="gyro_kurtosis" required>
+
+            <label for="lin_max">Linear Acceleration Maximum:</label>
+            <input type="text" name="lin_max" id="lin_max" required>
+
+            <label for="acc_skewness">Acceleration Skewness:</label>
+            <input type="text" name="acc_skewness" id="acc_skewness" required>
+
+            <label for="gyro_skewness">Gyroscope Skewness:</label>
+            <input type="text" name="gyro_skewness" id="gyro_skewness" required>
+
+            <label for="post_gyro_max">Post-event Gyroscope Maximum:</label>
+            <input type="text" name="post_gyro_max" id="post_gyro_max" required>
+
+            <label for="post_lin_max">Post-event Linear Acceleration Maximum:</label>
+            <input type="text" name="post_lin_max" id="post_lin_max" required>
+
+            <button type="submit">Predict</button>
+
+            <div style="clear:both;"></div>
+            <p style="font-weight: bold; font-size: 24px; color: #333; background-color: #f0f0f0; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">Prediction is: {{final_result}}</p>
+        </form>
+    </div>
+</body>
+</html>
